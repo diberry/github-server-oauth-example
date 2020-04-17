@@ -1,0 +1,32 @@
+<html>
+
+<head>
+  <title>New Note</title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body>
+  <h1>Add note</h1>
+  <p>
+    <form method="post" url="/github/note">
+
+      <b>Commit info</b><br>
+      <input type="text" name="committername" value="Your name">Committer Name<br>
+      <input type="text" name="committeremail" value="Your email">CommitterEmail<br>
+      <input type="text" name="commitMessage" value="First commit">commitMessage<br>
+
+      <br>
+      <b>Text File info</b><br>
+      <input type="text" name="filename" value="README-1.txt">File name and path<br>
+      <input type="text" name="filecontent" value="Hello World">File contents<br>
+
+      <br>
+      <b>Repo info</b><br>
+      <input type="text" name="repoowner" value="Your GitHub alias">Repo owner<br>
+      <input type="text" name="reponame" value="Your repo name">Repo name<br>
+      <input type="submit">
+    </form>
+  </p>
+</body>
+
+</html>
